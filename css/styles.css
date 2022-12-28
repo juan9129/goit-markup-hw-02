@@ -1,13 +1,26 @@
 /* fuentes-roboto-y-raleway */
 /* font-family: 'Raleway', sans-serif;......font-family: 'Roboto', sans-serif; */
-.body {
+:root {
+  --brand-color: #2196f3;
+  --button-color: #f5f4fa;
+  --background-button-color: #2196f3;
+  --background-section: #2f303a;
+  --main-font: "Roboto";
+}
+body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
 }
 /* header-section- */
 /* webstudio */
 .web-studio {
-  color: #2196f3;
+  color: var(--brand-color);
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -16,43 +29,40 @@
 }
 
 .web-studio:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 /* header-nav-elemnts */
 .header-element {
   color: #212121;
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1;
 }
 
 .header-element:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 /* header-contacts */
 .header-contact {
   color: #757575;
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
   text-decoration: none;
 }
-
 .header-contact:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 /* seccion#1 "soluciones eficacez para su negocio */
-.soluciones-eficacez {
-  background-color: #2f303a;
-  font-family: "Roboto";
+.effective-solutions {
+  background-color: var(--background-section);
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1;
   color: #ffff;
   text-align: center;
   letter-spacing: 0.06em;
@@ -60,7 +70,7 @@
 }
 /* seccion-2 */
 .section-2-titles {
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -69,50 +79,44 @@
 }
 
 .section-2-paragraphs {
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1;
   color: #757575;
 }
-/* section-3 */
-.a-que-nos-dedicamos-title {
-  font-family: "Roboto";
+/* section-titles */
+.section-titles {
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-/* section-4 */
-.nuestro-equipo-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
+/* section-4
+ */
 .team-members {
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1;
   color: #212121;
 }
 
 .jobs-members {
-  font-family: "Roboto";
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1;
   color: #757575;
 }
 /* portafolio-pagina2*/
-.portafolio-titles {
-  font-family: "Roboto";
+.briefcase-titles {
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -120,48 +124,67 @@
   color: #212121;
 }
 
-.portafolio-proyects {
-  font-family: "Roboto";
+.briefcase-proyects {
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 2;
   color: #757575;
 }
 
 /* buttons-section-filtros */
-.buttons:hover {
-  color: #ffff;
-  background-color: #2196f3;
+.button-effective-solutions:hover {
+  color: var(--button-color);
+  background-color: var(--background-button-color);
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+}
+.buttons-filters:hover {
+  color: var(--button-color);
+  background-color: var(--background-button-color);
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+}
+.filter-card {
   cursor: pointer;
 }
+
 /* footer-section */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-section);
 }
 /* footer-elements */
 .footer-elements {
   color: #ffff;
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1;
   text-decoration: none;
 }
 
 .footer-elements:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 /* footer-contacts */
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .footer-contact:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
