@@ -4,7 +4,7 @@
   --brand-color: #2196f3;
   --button-color: #f5f4fa;
   --background-button-color: #2196f3;
-  --background-section: #2f303a;
+  --background-color: #2f303a;
   --main-font: "Roboto";
 }
 body {
@@ -38,8 +38,10 @@ ul {
   font-style: normal;
   line-height: 1;
 }
-
 .header-element:hover {
+  color: var(--brand-color);
+}
+.header-element:active {
   color: var(--brand-color);
 }
 /* header-contacts */
@@ -57,7 +59,7 @@ ul {
 }
 /* seccion#1 "soluciones eficacez para su negocio */
 .effective-solutions {
-  background-color: var(--background-section);
+  background-color: var(--background-color);
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 900;
@@ -97,6 +99,10 @@ ul {
 }
 /* section-4
  */
+
+.our-team-members {
+  background-color: #f5f4fa;
+}
 .team-members {
   font-family: var(--main-font);
   font-style: normal;
@@ -132,8 +138,8 @@ ul {
 }
 
 /* buttons-section-filtros */
-.button-effective-solutions:hover {
-  color: var(--button-color);
+.button-effective-solutions {
+  color: white;
   background-color: var(--background-button-color);
   cursor: pointer;
   font-family: var(--main-font);
@@ -141,6 +147,18 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 2;
+  border: none;
+}
+
+.buttons-filters {
+  font-family: var(--main-font);
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
 .buttons-filters:hover {
   color: var(--button-color);
@@ -151,14 +169,23 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 2;
+  border: none;
 }
-.filter-card {
+
+.filter-card:hover {
   cursor: pointer;
 }
 
+.current {
+  color: var(--brand-color);
+}
+.current_button {
+  background-color: var(--brand-color);
+  color: white;
+}
 /* footer-section */
 .footer {
-  background-color: var(--background-section);
+  background-color: var(--background-color);
 }
 /* footer-elements */
 .footer-elements {
