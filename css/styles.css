@@ -179,7 +179,7 @@ ul {
 .current {
   color: var(--brand-color);
 }
-.current_button {
+.current-button {
   background-color: var(--brand-color);
   color: white;
 }
